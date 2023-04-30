@@ -1,0 +1,173 @@
+/* FONT */
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    
+    /* COLORS */
+    --BG-PALEBLUE: hsl(225, 100%, 94%);
+    --BG-BRIGHTBLUE: hsl(245, 75%, 52%);
+    --BG-VERYPALEBLUE: hsl(225, 100%, 98%);
+    --BG-DESATBLUE: hsl(224, 23%, 55%);
+    --BG-DARKBLUE: hsl(223, 47%, 23%);
+
+    /* FONT */
+    --FONT: 'Red Hat Display', sans-serif;
+    
+    /* FONT SIZE */
+    --FONTSIZE: 1rem;
+
+    /* FONT WEIGHT */
+    --WEIGHT500: 500;
+    --WEIGHT700: 700;
+    --WEIGHT900: 900;
+    
+}
+
+body {
+    min-height: 100dvh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: var(--BG-PALEBLUE);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-content: center;
+    font-family: var(--FONT);
+    font-weight: var(--WEIGHT500);
+}
+
+
+.container {
+    max-width: 27.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    }
+
+.hero-img img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+.order-sum {
+    text-align: center;
+    margin: 0 2.2rem;
+    
+            
+}
+    
+.order-sum h2 {
+    font-weight: var(--WEIGHT900);
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    color: var(--BG-DARKBLUE);
+}
+.order-sum p {
+    color: var(--BG-DESATBLUE);
+    line-height: 1.6rem;
+    font-weight: var(--WEIGHT500);
+    padding: 0rem 2.1rem 1.5rem 2.1rem;
+}
+
+.plan-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2rem .8rem;
+    margin: 0 2.5rem;
+    border-radius: 1rem;
+    background-color: var(--BG-VERYPALEBLUE);
+    
+}
+
+.note img {
+    display: flex;
+    }
+
+.annual-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2rem 0 2rem;
+    /* align-content: left; */
+    
+    gap: .2;
+    }
+
+.annual-plan h3 {
+    font-weight: var(--WEIGHT900);
+    font-size: 0.9rem;
+    align-content: left;
+    }
+
+.annual-plan p {
+    font-weight: var(--WEIGHT500);
+    font-size: 0.8rem;
+    color: var(--BG-DESATBLUE);
+    line-height: 1.5rem;
+    }    
+
+.annual_plan_change {
+    display: flex;
+    text-align: center;
+    font-weight: var(--WEIGHT700);
+    font-size: 0.75rem;
+}
+
+.payment_cancel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.6rem;
+    margin: 2rem 1.5rem ;
+
+}
+
+.btn {
+    
+    display: block;
+    cursor: pointer;
+
+    border-radius: .6rem;
+    font-size: .9rem;
+    font-weight: var(--WEIGHT700);
+    margin: 0 1.5rem;
+    padding: .6rem;
+
+}
+
+.payment_button {
+    background-color: var(--BG-BRIGHTBLUE);
+    color: var(--BG-VERYPALEBLUE);
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    }
+
+.cancel_button {
+    color: white;
+    color: var(--BG-DESATBLUE);
+    opacity: 1;
+    }
+
+    /* MOBILE */
+/* @media (width > 450px) {
+
+body {
+    
+} */
+
+
+
+
