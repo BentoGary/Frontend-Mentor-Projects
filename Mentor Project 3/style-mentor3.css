@@ -1,0 +1,120 @@
+/* FONT */
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    }
+
+/* VARIABLES */
+:root {
+
+/* COLORS */
+    --COLOR-DKCYAN: hsl(185, 75%, 39%);
+    --COLOR-VDDESATBLUE: hsl(229, 23%, 23%);
+    --COLOR-DKGREYBLUE: hsl(227, 10%, 46%);
+    --COLOR-DKGREY: hsl(0, 0%, 46%);
+
+/* FONT */
+    --FONT: 'Kumbh Sans', sans-serif;
+
+/* FONT SIZE*/
+    --FONTSIZE: 18px;
+
+/* FONT WEIGHT */
+    --FONTWEIGHT400: 400;
+    --FONTWEIGHT700: 700;
+}
+
+body {
+    min-height: 100dvh;
+    background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat,
+                url(./images/bg-pattern-bottom.svg) 120dvh 25dvw no-repeat;
+    background-color: var(--COLOR-DKCYAN);
+    background-size: contain;
+    
+    display: grid;
+    place-content: center;
+    
+    font-family: var(--FONT);
+    
+    /* font-weight: var(--FONTWEIGHT400); */
+}
+
+.main_container {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 350px;
+    min-height: 374px;
+
+}
+
+.victor_img {
+    border-radius: 50%;
+    transform: translateY(-3.5rem);
+    border: 5px solid white;
+    
+    
+}
+
+.personal_info {
+    text-align: center;
+    border-bottom: 1px solid hsl(225, 10%, 92%);
+    padding-bottom: 32px;
+}
+
+.personal_info_name {
+    font-weight: var(--FONTWEIGHT700);
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.personal_info_age {
+    color: var(--COLOR-DKGREY);
+    font-weight: var(--FONTWEIGHT700);
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.personal_info_location {
+    font-weight: var(--FONTWEIGHT400);
+    color: var(--COLOR-DKGREYBLUE);
+    font-size: 0.889rem;
+    line-height: 17px;
+    padding-top: 18px;
+}
+
+.social_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 54px 24px 47px;
+    
+}
+
+.social_container_cards {
+    display: grid;
+    text-align: center;
+}
+
+.social_container_cards h3 {
+    font-weight: var(--FONTWEIGHT700);
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.social_container_cards p {
+    color: var(--COLOR-VDDESATBLUE);
+    letter-spacing: 1.5px;
+    font-weight: var(--FONTWEIGHT400);
+    font-size: 0.55rem;
+    line-height: 0.667rem;
+    padding-top: 14px;
+}
+
