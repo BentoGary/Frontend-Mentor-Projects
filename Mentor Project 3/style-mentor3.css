@@ -33,14 +33,9 @@ body {
     background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat,
                 url(./images/bg-pattern-bottom.svg) 120dvh 25dvw no-repeat;
     background-color: var(--COLOR-DKCYAN);
-    background-position: absolute;
-    
     display: grid;
     place-content: center;
-    
     font-family: var(--FONT);
-    
-    /* font-weight: var(--FONTWEIGHT400); */
 }
 
 .main_container {
@@ -65,17 +60,14 @@ body {
     padding-bottom: 32px;
 }
 
-.personal_info_name {
+.personal_info h2 {
+    font-size: var(--FONTSIZE);
     font-weight: var(--FONTWEIGHT700);
-    font-size: 1rem;
     line-height: 22px;
 }
 
 .personal_info_age {
     color: var(--COLOR-DKGREYBLUE);
-    font-weight: var(--FONTWEIGHT700);
-    font-size: var(--FONTSIZE);
-    line-height: 22px;
 }
 
 .personal_info_location {
