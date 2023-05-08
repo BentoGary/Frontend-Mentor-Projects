@@ -30,7 +30,7 @@
 
 body {
     min-height: 100dvh;
-    background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat,
+    background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat ,
                 url(./images/bg-pattern-bottom.svg) 120dvh 25dvw no-repeat;
     background-color: var(--COLOR-DKCYAN);
     display: grid;
@@ -45,7 +45,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     min-width: 350px;
-    min-height: 374px;
+    min-height: 374PX;
 }
 
 .victor_img {
@@ -64,6 +64,7 @@ body {
     font-size: var(--FONTSIZE);
     font-weight: var(--FONTWEIGHT700);
     line-height: 22px;
+    margin-top: -2rem;
 }
 
 .personal_info_age {
@@ -107,3 +108,24 @@ body {
     padding-top: 14px;
 }
 
+/* @media screen and (max-width: 376px) {
+
+body {
+    background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat,
+                url(./images/bg-pattern-bottom.svg) 50px 65px no-repeat;
+}
+
+.main_container {
+    min-width: 326px;
+}
+}
+
+@media screen and (min-width: 376px) {
+
+body {
+    background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat fixed,
+                url(./images/bg-pattern-bottom.svg) 120dvh 25dvw no-repeat fixed;
+    background-color: var(--COLOR-DKCYAN);
+}
+} */
+   
