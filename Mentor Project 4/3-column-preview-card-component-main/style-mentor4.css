@@ -1,0 +1,119 @@
+/* FONT IMPORTS */
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+
+/* COLORS */
+    /* PRIMARY */
+    --COLOR-BRIGHTORANGE: hsl(31, 77%, 52%);
+    --COLOR-DARKCYAN: hsl(184, 100%, 22%);
+    --COLOR-VERYDARKCYAN: hsla(179, 100%, 13%, 1);
+    
+    /* PARA,BG,HEADING,BUTTON */
+    --COLOR-TRANSPARENTWHITE: hsla(0, 0%, 100%, 0.75);
+    --COLOR-VERYLIGHTGRAY: hsl(0, 0%, 95%);
+
+/* FONT */
+    --FONT-LEXEND: 'Lexend Deca', sans-serif;
+    --FONT-BIG-SHOULDERS: 'Big Shoulders Display', sans-serif;
+
+/* FONT SIZE*/
+    --FONTSIZE: 15px;
+
+/* FONT WEIGHT */
+    --FONTWEIGHT400: 400;
+    --FONTWEIGHT700: 700;    
+}
+
+body {
+    min-height: 100dvh;
+    background-color: var(--COLOR-TRANSPARENTWHITE);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.columns_section {
+    text-align: left;
+    align-items: top;
+    border-radius: 8px;
+}
+
+.column_header {
+    font-family: var(--FONT-BIG-SHOULDERS);
+    font-size: 40px;
+    font-weight: var(--FONTWEIGHT700);
+    line-height: 48px;
+    vertical-align: top;
+}
+
+.column_content {
+    font-family: var(--FONT-LEXEND);
+    font-size: var(--FONTSIZE);
+    line-height: 25px;
+    color: var(--COLOR-TRANSPARENTWHITE);
+    font-weight: var(--FONTWEIGHT400);
+}
+
+.columns_section:nth-child(1) {
+    background-color: var(--COLOR-BRIGHTORANGE);
+}
+
+.columns_section:nth-child(2) {
+    background-color: var(--COLOR-DARKCYAN);
+}
+
+.columns_section:nth-child(3) {
+    background-color: var(--COLOR-VERYDARKCYAN);
+}
+
+h2, button {
+    color: var(--COLOR-VERYLIGHTGRAY);
+}
+
+.button_learn {
+    height: 49px;
+    width: 146px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+
+.main_container {
+    display: block;
+}
+
+.columns_section {
+    max-width: 327px;
+    max-height: 448px;
+}
+}
+    
+@media only screen and (min-width: 376px) and (max-width: 1440px) {
+
+.main_container {
+    display: inline-block;
+}
+
+    .columns_section {
+    max-width: 307px;
+    max-height: 500px;
+    
+}
+}

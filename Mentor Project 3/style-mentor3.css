@@ -108,7 +108,7 @@ body {
     padding-top: 14px;
 }
 
-/* @media screen and (max-width: 376px) {
+/* @media screen and (min-width: 375px) {
 
 body {
     background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat,
@@ -120,7 +120,7 @@ body {
 }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (max-width: 376px) {
 
 body {
     background: url(./images/bg-pattern-top.svg) -20dvh -20dvw no-repeat fixed,
