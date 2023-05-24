@@ -42,33 +42,25 @@ body {
     align-items: center;
 }
 
-
-.main_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-}
-
 .columns_section {
-    text-align: left;
     align-items: top;
-    border-radius: 8px;
+    color: var(--COLOR-TRANSPARENTWHITE);
 }
 
 .column_header {
-    font-family: var(--FONT-BIG-SHOULDERS);
-    font-size: 40px;
+    font: 40px var(--FONT-BIG-SHOULDERS);
     font-weight: var(--FONTWEIGHT700);
     line-height: 48px;
     vertical-align: top;
+    padding-top: 35px;
 }
 
 .column_content {
     font-family: var(--FONT-LEXEND);
     font-size: var(--FONTSIZE);
     line-height: 25px;
-    color: var(--COLOR-TRANSPARENTWHITE);
     font-weight: var(--FONTWEIGHT400);
+    text-align: left;
 }
 
 .columns_section:nth-child(1) {
@@ -83,37 +75,72 @@ body {
     background-color: var(--COLOR-VERYDARKCYAN);
 }
 
-h2, button {
-    color: var(--COLOR-VERYLIGHTGRAY);
-}
-
-.button_learn {
+button {
     height: 49px;
     width: 146px;
+    font-size: var(--FONTSIZE);
     border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--COLOR-VERYLIGHTGRAY);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+button:hover {
+    color: var(--COLOR-TRANSPARENTWHITE);
+    background-color: transparent;
+}
+
+.sedans {
+    color: var(--COLOR-BRIGHTORANGE);
+}
+
+.suvs {
+    color: var(--COLOR-DARKCYAN);
+}
+
+.luxury {
+    color: var(--COLOR-VERYDARKCYAN);
 }
 
 @media only screen and (max-width: 375px) {
 
 .main_container {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .columns_section {
     max-width: 327px;
-    max-height: 448px;
+    height: 448px;
+    padding: 48px;
 }
+
+.columns_section:nth-child(1) {
+    border-radius: 8px 8px 0 0;
+}
+
+.columns_section:nth-child(3) {
+    border-radius: 0 0 8px 8px;
+}
+
+.column_content {
+    padding: 25px 0 25px 0;
+}
+
+
 }
     
-@media only screen and (min-width: 376px) and (max-width: 1440px) {
+@media only screen and (min-width: 376px) {
 
 .main_container {
-    display: inline-block;
+    display: flex;
+    flex: nowrap;
 }
 
-    .columns_section {
+.columns_section {
     max-width: 307px;
-    max-height: 500px;
+    height: 500px;
     
 }
 }
