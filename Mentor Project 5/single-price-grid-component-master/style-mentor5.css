@@ -1,0 +1,245 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+        /* PRIMARY */
+        --color-cyan: hsl(179, 62%, 43%);
+        --color-brightyellow: hsl(71, 73%, 54%);
+
+        --color-lightgrey: hsl(204, 43%, 93%);
+        --color-greyishblue: hsl(218, 22%, 67%);
+        --color-white: white;
+
+    /* FONT */
+        /* FONT SIZE */
+        --fontsize: 16px;
+
+        /* FONT WEIGHT */
+        --fontweight-400: 400;
+        --fontweight-700: 700;
+
+        /* FONT FAMILY */
+        --fontfamily: 'Karla', sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: var(--color-lightgrey);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    font-family: var(--fontfamily);
+    text-align: left;
+}
+
+.item1 {
+    background-color: var(--color-white);
+}
+
+.item1 h2 {
+    color: var(--color-cyan);
+    font-weight: var(--fontweight-700);
+}
+
+.item1 h3 {
+    color: var(--color-brightyellow);
+    font-weight: var(--fontweight-400);
+}
+
+.item1 p {
+    color: var(--color-greyishblue);
+}
+
+.item2 {
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+}
+
+.item2 h3 {
+    font-size: 18px;
+    font-weight: var(--fontweight-700);
+    letter-spacing: -0.22px;
+    line-height: 21px;
+}
+
+.item2 h4 {
+    font-size: 16px;
+    font-weight: var(--fontweight-400);
+    line-height: 26px;
+    letter-spacing: -0.2;
+    opacity: 50%;
+    padding-top: 15px;
+    padding-bottom: 4px;
+}
+
+.item2 span {
+    color: var(--color-white);
+    font-size: 32px;
+    font-weight: var(--fontweight-700);
+    letter-spacing: -0.4;
+    vertical-align: middle;
+    line-height: 37px;
+    opacity: 1;
+}
+
+.item2 p {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 26px;
+    padding-bottom: 27px;
+}
+
+.item2 button {
+    width: 267px;
+    height: 50px;
+    font-weight: var(--fontweight-400);
+    border-radius: 5px;
+    background-color: var(--color-brightyellow);
+    color: var(--color-white);
+    vertical-align: middle;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 200ms;
+    }
+
+.item3 {
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+    opacity: .75;
+}
+
+.item3 h3 {
+    font-weight: var(--fontweight-400);
+    letter-spacing: -0.22px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.item3 ul {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.17px;
+    opacity: 75%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 375px) {
+
+    main {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        'item1'
+        'item2'
+        'item3';
+        width: min(90%, 311px);
+        margin-inline: auto;
+    }
+
+    .item1 {
+        border-radius: 7px;
+        padding: 14px 64px 16px 21px;
+    }
+
+    .item1 h2 {
+        font-size: 20px;
+        letter-spacing: -0.25px;
+    }
+
+    .item1 h3 {
+        font-size: 15px;
+        letter-spacing: -0.19px;
+        padding: 24px 0 7px 0;
+        line-height: 20px;
+    }
+
+    .item1 p {
+        color: var(--color-greyishblue);
+        font-size: 14px;
+        letter-spacing: -0.17px;
+        line-height: 26px;
+    }
+
+    .item2 {
+        color: var(--color-white);
+        padding: 24px;
+    }
+
+    .item3 {
+        padding: 24px;
+    }
+    
+    .item3 h3 {
+        padding-bottom: 20px;
+    }
+
+    
+    }
+
+/* BROWSER */
+@media only screen and (min-width: 376px) {
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        width: min(90%, 635px);
+        margin-inline: auto;
+    }
+    
+    .item1 {
+        grid-area: 1 / span 2;
+        padding: 40px;
+    }
+
+    .item1 h2 {
+        font-size: 24px;
+        letter-spacing: -0.3px;
+    }
+    
+    .item1 h3 {
+        font-size: 18px;
+        letter-spacing: -0.22px;
+        padding: 24px 0 11px 0;
+        line-height: 21px;
+    }
+
+    .item1 p {
+        font-size: 16px;
+        letter-spacing: -0.2px;
+        line-height: 26px;
+    }
+
+
+    .item2 {
+        grid-area: 2 / 1;
+        padding: 40px;
+        
+    }
+    
+    .item3 {
+        grid-area: 2 / 2;
+        padding: 40px;
+    }
+
+    .item3 h3 {
+        padding-bottom: 18px;
+    }
+
+}
